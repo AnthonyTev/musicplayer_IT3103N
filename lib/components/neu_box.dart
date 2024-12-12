@@ -9,6 +9,10 @@ class NeuBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    // is dark mode
+    // bool isDarkMode = Provider.of<ThemeProvider>(context).isDarkMode;
+
     return Container(
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.surface,
@@ -16,7 +20,7 @@ class NeuBox extends StatelessWidget {
         boxShadow: [
           // darker shadow on the bottom right
           BoxShadow(
-            color: Colors.grey.shade500,
+            color:Colors.grey.shade500,
             blurRadius: 15,
             offset: const Offset(4, 4),
           ),
